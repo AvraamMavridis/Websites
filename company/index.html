@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyCompany">
+	<head>
+		<title>My Company</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+		<link href="css/mystyles.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="navbar navbar-default navbar-static-top" style="top:50px; background:none; border:0px; box-shadow:none;">
+			<div class="navbar-inner">  
+				<div class="container-fluid" >
+					<ul class="nav navbar-nav">
+						<li><a href="#news">News</a></li>
+			            <li><a href="#portofolio">Portofolio</a></li>
+			            <li><img id="logo" src="images/logo.png"/></li>
+			            <li><a href="#contact">Contact</a></li>
+			            <li><a href="#">About</a></li>
+			        </ul>
+				</div>
+			</div>
+		</div>
+
+	<div class="ng-view"></div>
+	
+
+    
+
+		<div class="navbar navbar-default navbar-static-bottom" style="background:none; border:0px; box-shadow:none;">
+			<div class="navbar-inner" style="margin: 0 auto; text-align:center;">  
+				<div class="container-fluid" >
+					<ul class="nav navbar-nav" style="margin: 0 auto; text-align:center;" >   
+					  <li><img class="social-media" src="images/facebook.png"></li>
+					  <li><img class="social-media" src="images/twitter.png"></li>
+					  <li><img class="social-media" src="images/linkedin.png"></li>
+					</ul>  
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/angular-route.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/controllers/NewsController.js"></script>
+	<script type="text/javascript" src="js/controllers/PortofolioController.js"></script>
+
+	</body>
+</html>

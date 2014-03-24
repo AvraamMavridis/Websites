@@ -1,0 +1,19 @@
+<div class="container-fluid" >
+		<div class="row-fluid" ng-controller="NewsController">
+			<div class="col-md-8 col-md-offset-2">
+					<div id="news" >
+						<br><p id="newsheader">News</p></br>
+						<div id="newselements">
+						<div ng-repeat="element in news.elements">
+							<div><news class="newstitle">{{element.name}}</news><news class="newsdate"> - {{element.date}}</news></div>
+							<p class="newsdescription">{{element.description}}</p>
+							<br></br>
+						</div>
+						</div>
+					</div>
+					
+			</div>
+		</div>
+	</div>
+	</div>
+	

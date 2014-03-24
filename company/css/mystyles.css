@@ -1,0 +1,205 @@
+body{
+	background:url('../images/background.jpg')no-repeat;
+}
+#logo{
+	width: 125px;
+	height: 134px;
+	margin-top: -40px;
+}
+
+
+
+.social-media {
+	opacity: 0.4;
+	margin-left: 15px;
+	width: 32px;
+	height: 32px;
+}
+
+.social-media:hover {
+	opacity: 1;
+	margin-left: 15px;
+	width: 32px;
+	height: 32px;
+}
+
+.navbar-static-top {
+  margin-bottom: 60px;
+}
+
+.navbar-static-bottom{
+	margin-top: 60px;
+}
+
+
+.navbar-nav > li > a {
+  font-size: 16px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  font-weight:normal;
+  text-align:left;
+  font-family:helvetica, sans-serif;
+  line-height:1;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: white;
+  background-color: transparent;
+  text-decoration:underline;
+  font-weight:normal;
+  text-align:left;
+  font-family:helvetica, sans-serif;
+  line-height:1;
+}
+
+
+
+#news{
+-moz-border-radius: 24px;
+-webkit-border-radius: 24px;
+border-radius: 24px;
+/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+-moz-box-shadow: 0px 0px 20px #000000;
+-webkit-box-shadow: 0px 0px 20px #000000;
+box-shadow: 0px 0px 20px #000000;
+background: #0A4958;
+opacity: 0.9;
+text-align: left;
+padding-top: 1px;
+margin-top: 15px;
+-webkit-animation:myfirst 3s; /* Chrome, Safari, Opera */
+animation:myfirst 3s;
+}
+
+#newselements{
+	height: 200px !important;
+    overflow-y: auto;
+	overflow-x: hidden;
+
+}
+
+#newsheader{
+	font-size: 15px;
+	text-align: center;
+	color: white;
+}
+
+.newstitle{
+	padding-left: 5%;
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+}
+
+.newsdate{
+	padding-right: 5%;
+	font-size: 12px;
+	color: white;
+}
+
+.newsdescription{
+	text-align:justify;
+	padding-left: 5%;
+	padding-right: 5%;
+	color: white;
+
+}
+
+#portofolioelement{
+-moz-border-radius: 24px;
+-webkit-border-radius: 24px;
+border-radius: 24px;
+/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+-moz-box-shadow: 0px 0px 20px #000000;
+-webkit-box-shadow: 0px 0px 20px #000000;
+box-shadow: 0px 0px 20px #000000;
+background: #0A4958;
+opacity: 0.9;
+text-align: left;
+padding-top: 1px;
+margin-top: 15px;
+height: 450px;
+overflow-y:auto;
+-webkit-animation:myfirst 3s; /* Chrome, Safari, Opera */
+animation:myfirst 3s;
+}
+
+#portofolio-element-title{
+	margin-top: 10px;
+	color: white;
+	font-weight: bold;
+}
+
+#portofolio-element-image{
+	width: 128px;
+	height: 128px;
+	margin-right:5px;
+	float:left;
+}
+
+#portofolio-element-description{
+	color: white;
+	text-align:justify;
+	margin-left: 5px;
+}
+
+#form{
+-moz-border-radius: 24px;
+-webkit-border-radius: 24px;
+border-radius: 24px;
+/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+-moz-box-shadow: 0px 0px 20px #000000;
+-webkit-box-shadow: 0px 0px 20px #000000;
+box-shadow: 0px 0px 20px #000000;
+opacity: 0.9;
+text-align: left;
+padding-top: 1px;
+margin-top: 15px;
+height: 450px;
+overflow-y:auto;
+-webkit-animation:myfirst 3s; /* Chrome, Safari, Opera */
+animation:myfirst 3s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst
+{
+	from {opacity:0;}
+	to {opacity:1;}
+}
+
+/* Standard syntax */
+@keyframes myfirst
+{
+	from {opacity:0;}
+	to {opacity:1;}
+}
+
+
+#email-label,#name-label,#message-label{
+	color: white;
+	font-weight: bold;
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
+#name-label,#message-label{
+	margin-top: 5px;
+}
+
+#email-input,#name-input{
+	width: 300px;
+	margin-left: 15px;
+}
+
+#message-input{
+	width: 500px;
+	margin-left: 15px;
+}
+
+.btn-primary{
+	margin-left: 15px;
+}
