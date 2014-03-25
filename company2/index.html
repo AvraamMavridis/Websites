@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyCompany">
+	<head>
+		<title>My Company</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+		<link href="css/mystyles.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="navbar navbar-default navbar-fixed-top" style=" background:#3A3142; border:0px; box-shadow:none;">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<div class="navbar-inner">  
+
+				<div class="container"  ng-controller="IndexController" style="min-height: 60px;" >
+					<ul class="nav navbar-nav">
+					<li><img id="logo" ng-src="images/logo.gif"></a></li>
+						<li><a ng-click="moveToSection('news')">News</a></li>
+			            <li><a ng-click="moveToSection('portofolio')">Portofolio</a></li>
+			            <li><a ng-click="moveToSection('contact')">Contact</a></li>
+			            <li><a ng-click="moveToSection('about')">About</a></li>
+
+			        </ul>
+			        <img class="social-media pull-right" src="images/linkedin.png">
+			        <img class="social-media pull-right" src="images/twitter.png">
+			        <img class="social-media pull-right" src="images/facebook.png">
+				</div>
+
+			</div>
+		</div>
+		</div>
+
+<div style="background:#B6C493;">
+<div class="container-fluid" id="container-news">
+	<div class="row"  ng-controller="NewsController" style="margin-top:60px; margin-bottom:60px;">
+		<div ng-repeat="element in news.elements">
+			<div class="col-md-10 col-md-offset-1" id="news-element" >
+			<div id="news-name">
+			<img src="images/news.png" style="height:32px; width=32px; ">
+			{{element.name}}
+			<div class="pull-right"  style="margin-top:5px;">
+			<img src="images/calendar.png" style="height:32px; width=32px; ">
+			{{element.date}}</div>
+			</div>
+			<div id="news-description" style="margin-top:5px;">
+			{{element.description}}
+			</div>
+			</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<div style="background:#F1D4AF;">
+<div class="container-fluid" style="" id="container-portofolio">
+	<div class="row"  ng-controller="PortofolioController" style="margin-top:60px; margin-bottom:60px;">
+		<div ng-repeat="element in portofolio.elements">
+			<div class="col-md-4 col-md-offset-1" id="portofolio-element" >
+				<p id="portofolio-name">{{element.name}}</p>
+				<img ng-src={{element.image}} class="portofolio-image" id="portofolio-image{{$index}}" >
+				<p id="portofolio-description">{{element.description}}</p>
+			</div>
+		</div>
+	</div>
+
+</div>
+</div>
+
+<div style="background:#FA8C7F;">
+<div class="container-fluid"  id="container-contact">
+	<div class="col-md-6 col-md-offset-3" style="margin-top:80px; margin-bottom:80px;">
+				<form id="form">
+				  <div class="form-group">
+    				<label for="email-input" id="email-label">Email address</label>
+    				<input type="email" class="form-control" id="email-input" placeholder="Enter email">
+  				  </div>
+  				  <div class="form-group">
+    				<label for="name-input" id="name-label">Name</label>
+    				<input type="text" class="form-control" id="name-input" placeholder="Enter your name">
+  				  </div>
+  				   <div class="form-group">
+    				<label for="message-input" id="message-label">Message</label>
+    				<textarea class="form-control" rows="5" id="message-input"></textarea>
+  				  </div>
+  				  <button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+</div>
+</div>
+
+<div style="background:#9E8273;">
+<div class="container-fluid"  id="container-about">
+<div class="row">
+	<div class="col-md-4" style="background:white;">sadsa</div>
+</div>
+</div>
+</div>
+	
+
+	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/angular-route.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/controllers/NewsController.js"></script>
+	<script type="text/javascript" src="js/controllers/PortofolioController.js"></script>
+	<script type="text/javascript" src="js/controllers/IndexController.js"></script>
+	</body>
+</html>

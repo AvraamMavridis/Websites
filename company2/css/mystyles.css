@@ -1,0 +1,130 @@
+
+#logo{
+  width: 72px;
+  height: 33px;
+  margin-top: 10px;
+}
+
+.social-media {
+	opacity: 0.4;
+  margin-top: 25px;
+  margin-left: 15px;
+	width: 16px;
+	height: 16px;
+}
+
+.social-media:hover {
+	opacity: 1;
+  margin-top: 25px;
+  margin-left: 15px;
+	width: 16px;
+	height: 16px;
+}
+
+
+
+.navbar-nav > li > a {
+  font-size: 16px;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: white;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  color: white;
+  font-weight:bold;
+  text-align:left;
+  font-family:helvetica, sans-serif;
+  line-height:1;
+  margin-top: 10px;
+}
+
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: white;
+  background-color: transparent;
+  text-decoration:underline;
+  font-weight:bold;
+  text-align:left;
+  font-family:helvetica, sans-serif;
+  line-height:1;
+  cursor:pointer;
+}
+
+.container-fluid{
+	min-height:800px;
+}
+
+#container-news{
+  background-image:url('http://www.friendlyrentals.com/FR_imgs/blog/berlin-city-night.jpg');
+	opacity: 0.4;
+}
+
+#container-portofolio{
+	background-image:url('http://www.friendlyrentals.com/FR_imgs/blog/berlin-city-night.jpg');
+  opacity: 0.4;
+}
+
+#container-contact{
+  background-image:url('http://www.friendlyrentals.com/FR_imgs/blog/berlin-city-night.jpg');
+  opacity: 0.4;
+}
+
+#container-about{
+  background-image:url('http://www.friendlyrentals.com/FR_imgs/blog/berlin-city-night.jpg');
+  opacity: 0.4;
+}
+
+#news-element{
+  background:white; 
+  text-align:left;
+  margin-top: 15px;
+  min-height: 200px;
+}
+
+#news-description{
+  margin-top:15px;
+  color: black;
+  text-align: justify;
+}
+
+#news-name{
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#news-date{
+  font-size:12px;
+}
+
+#portofolio-element{
+  background:white; 
+  margin-top: 10px;
+  min-height: 200px;
+  opacity: 0.9;
+}
+
+.portofolio-image{
+  width: 128px;
+  height: 128px;
+  float: left;
+  margin-right: 10px;
+}
+
+#portofolio-name{
+  color:#545559;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#portofolio-description{
+  text-align: justify;
+}
+
+#name-label,#message-label,#email-label{
+  color: white;
+}
