@@ -1,0 +1,154 @@
+@import url(http://fonts.googleapis.com/css?family=Nothing+You+Could+Do);
+
+body{
+  background: #000000;
+}
+
+#sidebar{
+  background: #000000;
+}
+
+#main-container{
+  background-image: url("../images/background.jpg");
+  margin-left: 0px;
+  opacity: 0.9;
+}
+
+
+.nav > li > a {
+  color: white;
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.nav > li > a:hover,a:focus {
+  background-color: #D31900;
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 30px;
+  text-decoration: underline;
+  -webkit-animation:myfirst 1s; /* Chrome, Safari, Opera */
+  animation:myfirst 1s;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst
+{
+  from {opacity:0.4;}
+  to {opacity:1;}
+}
+
+/* Standard syntax */
+@keyframes myfirst
+{
+  from {opacity:0.4;}
+  to {opacity:1;}
+}
+
+
+#container-news{
+  margin-top: 10px;
+  background:#D31900;
+  opacity: 0.9;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  
+}
+
+#news-description{
+  color: white;
+  text-align: justify;
+  font-size: 14px;
+}
+
+#news-title{
+  color: white;
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.social-media{
+  width: 16px;
+  height: 16px;
+  margin-left: 20px;
+  opacity: 0.7;
+  float:left;
+}
+
+.social-media:hover{
+  background-color: #D31900;
+  opacity: 1;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+
+#portofolio-description{
+  color: white;
+  text-align: justify;
+  font-size: 14px;
+  float:left;
+}
+
+#portofolio-element-title{
+  margin-top: 15px;
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 30px;
+}
+
+#portofolio-element-image{
+  float:left;
+  margin-right: 10px;
+  width: 128px;
+  height: 128px;
+}
+
+#container-portofolio{
+  margin-top: 10px;
+  background:#D31900;
+  color: white;
+  opacity: 0.9;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  text-align: justify;
+  height: 450px;
+}
+
+#form{
+  margin-top:50px;
+}
+
+#email-label,#name-label,#message-label{
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  color: #D31900;
+}
+
+#email-input,#name-input,#message-input{
+  color: black;
+  background-color: #D31900;
+  opacity: 0.7;
+  border-color: white;
+}
+
+#submit{
+  color: black;
+  background-color: #D31900;
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  border-color: white;
+}
+
+#submit:hover{
+  color: #D31900;
+  background-color: black;
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  border-color: white;
+}

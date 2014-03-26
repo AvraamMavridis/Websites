@@ -1,0 +1,13 @@
+<div class="col-md-10" id="main-container">
+<div class="container-fluid"  ng-controller="PortofolioController">
+		<div class="row">
+		<div ng-repeat="element in portofolio.elements">
+			<div class="col-md-5 col-md-offset-1" id="container-portofolio">
+				<p id="portofolio-element-title">{{element.name}}</p>
+				<img ng-src={{element.image}} id="portofolio-element-image">
+				<p id="portofolio-element-description">{{element.description}}</p>
+			</div>
+		</div>
+</div>
+</div>
+</div>
