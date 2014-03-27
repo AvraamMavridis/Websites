@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Artist">
+	<head>
+		<title>Portal</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+		<link href="css/mystyles.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/smoothbox.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/angular-route.min.js"></script>
+	
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/jquery.newsTicker.min.js"></script>
+	<script src="js/smoothbox.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/jquery.newsTicker.min.js"></script>
+	<script type="text/javascript" src="js/controllers/IndexController.js"></script>
+	</head>
+	
+	<body>
+
+	<div class="navbar navbar-default navbar-fixed-top">
+			<div class="navbar-inner"> 
+			<a class="navbar-brand" href="#"><img ng-src="images/logo.png" id="logo"></a>
+				<div class="container-fluid" >
+					<ul class="nav navbar-nav pull-right">
+						<li><a href="#news" id="link">News</a></li>
+			            <li><a href="templates/portofolio.html" id="link">Portofolio</a></li>
+			            <li><a href="#contact" id="link">Contact</a></li>
+			            <li><a href="#" id="link">About</a></li>
+			        </ul>
+				</div>
+			</div>
+		</div>
+   <div class="container" id="news-container" ng-controller="IndexController">
+   	<div class="row">
+   		<div class="col-md-8 col-md-offset-2" >
+   		<img ng-src="images/arrow-up.png" id="uparrow">
+		<ul class="newsticker" id="newsticker"> 
+		                <li style="margin-top: 0px;">Etiam imperdiet volutpat libero eu tristique. Aenean, rutrum felis in. <a href="#">Read more...</a></li><li style="margin-top: 0px;">Curabitur porttitor ante eget hendrerit adipiscing. Maecenas at magna. <a href="#">Read more...</a></li><li style="margin-top: 0px;">Praesent ornare nisl lorem, ut condimentum lectus gravida ut. <a href="#">Read more...</a></li><li style="margin-top: 0px;">Nunc ultrices tortor eu massa placerat posuere. Vivamus viverra sagittis. <a href="#">Read more...</a></li><li style="margin-top: 0px;">Morbi sodales tellus sit amet leo congue bibendum. Ut non mauris eu neque. <a href="#">Read more...</a></li><li style="margin-top: 0px;">In pharetra suscipit orci sed viverra. Praesent at sollicitudin tortor, id. <a href="#">Read more...</a> </li><li style="margin-top: 0px;">Maecenas nec ligula sed est suscipit aliquet sed eget ipsum, suspendisse. <a href="#">Read more...</a></li><li style="margin-top: 0px;">Onec bibendum consectetur diam, nec euismod urna venenatis eget.. <a href="#">Read more...</a> </li></ul>
+		<img ng-src="images/arrow-down.png" id="downarrow">
+		</div>
+		</div>
+	</div>
+	<div class="navbar navbar-default navbar-fixed-bottom" style="margin-bottom:0px;">
+			<div class="navbar-inner"> 
+				<div class="container-fluid" >
+					<ul class="nav navbar-nav">
+						<li><img class="social-media"  id="facebook"></li>
+			            <li><img class="social-media" id="twitter"></li>
+			            <li><img class="social-media" id="linkedin"></li>
+			        </ul>
+				</div>
+			</div>
+		</div>
+	
+
+	</body>
+
+</html>

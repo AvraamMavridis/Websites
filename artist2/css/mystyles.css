@@ -1,0 +1,118 @@
+@import url(http://fonts.googleapis.com/css?family=Nothing+You+Could+Do);
+
+
+#logo{
+  width: 200px;
+  height: 100px;
+}
+
+
+#link{
+  color: #0A2F2A;
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 30px;
+  font-weight: bold;
+ 
+}
+
+#link:hover{
+   -webkit-animation:myfirst 1.5s; /* Chrome, Safari, Opera */
+  animation:myfirst 1.5s;
+
+}
+
+body{
+  background-color: #EDEF08;
+}
+
+.navbar-default{
+ background:none; 
+ border:0px;
+ box-shadow:none;
+}
+
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst
+{
+  from {padding-top: 5px; opacity: 0.4;}
+  to {padding-top: 15px; opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes myfirst
+{
+  from {padding-top: 5px; opacity: 0.4;}
+  to {padding-top: 15px; opacity: 1;}
+}
+
+#uparrow,#downarrow{
+  height: 32px;
+  width: 32px;
+}
+
+#uparrow:hover,#downarrow:hover{
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+   -webkit-animation:arrowanimation 1.5s; /* Chrome, Safari, Opera */
+  animation:arrowanimation 1.5s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes arrowanimation
+{
+  from {height: 32px; opacity: 0.4;}
+  to {height: 40px; opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes arrowanimation
+{
+  from {height: 32px; opacity: 0.4;}
+  to {height: 40px; opacity: 1;}
+}
+
+#newsticker{
+  height: 240px; 
+  overflow: hidden;
+  border-radius: 8px 8px 8px 8px;
+-moz-border-radius: 8px 8px 8px 8px;
+-webkit-border-radius: 8px 8px 8px 8px;
+border: 4px dashed #0A2F2A;
+}
+
+#news-container{
+  margin-top:100px;
+}
+
+.social-media{
+  margin-right: 10px;
+  width: 32px;
+  height: 32px;
+}
+
+#facebook{
+  content: url("../images/facebook_.png");
+}
+
+#facebook:hover{
+  content: url("../images/facebook.png");
+}
+
+#twitter{
+  content: url("../images/twitter_.png");
+}
+
+#twitter:hover{
+  content: url("../images/twitter.png");
+}
+
+#linkedin{
+  content: url("../images/linkedin_.png");
+}
+
+#linkedin:hover{
+  content: url("../images/linkedin.png");
+}
