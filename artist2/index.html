@@ -23,6 +23,7 @@
 	<script type="text/javascript" src="js/app.js"></script>
 	<script type="text/javascript" src="js/jquery.newsTicker.min.js"></script>
 	<script type="text/javascript" src="js/controllers/IndexController.js"></script>
+	<script type="text/javascript" src="js/controllers/NewsController.js"></script>
 	</head>
 	
 	<body>
@@ -32,20 +33,24 @@
 			<a class="navbar-brand" href="#"><img ng-src="images/logo.png" id="logo"></a>
 				<div class="container-fluid" >
 					<ul class="nav navbar-nav pull-right">
-						<li><a href="#news" id="link">News</a></li>
+						<li><a href="index.html" id="link">News</a></li>
 			            <li><a href="templates/portofolio.html" id="link">Portofolio</a></li>
-			            <li><a href="#contact" id="link">Contact</a></li>
-			            <li><a href="#" id="link">About</a></li>
+			            <li><a href="templates/contact.html" id="link">Contact</a></li>
+			            <li><a href="templates/about.html" id="link">About</a></li>
 			        </ul>
 				</div>
 			</div>
 		</div>
-   <div class="container" id="news-container" ng-controller="IndexController">
+   <div class="container" id="news-container" ng-controller="NewsController">
    	<div class="row">
    		<div class="col-md-8 col-md-offset-2" >
    		<img ng-src="images/arrow-up.png" id="uparrow">
-		<ul class="newsticker" id="newsticker"> 
-		                <li style="margin-top: 0px;">Etiam imperdiet volutpat libero eu tristique. Aenean, rutrum felis in. <a href="#">Read more...</a></li><li style="margin-top: 0px;">Curabitur porttitor ante eget hendrerit adipiscing. Maecenas at magna. <a href="#">Read more...</a></li><li style="margin-top: 0px;">Praesent ornare nisl lorem, ut condimentum lectus gravida ut. <a href="#">Read more...</a></li><li style="margin-top: 0px;">Nunc ultrices tortor eu massa placerat posuere. Vivamus viverra sagittis. <a href="#">Read more...</a></li><li style="margin-top: 0px;">Morbi sodales tellus sit amet leo congue bibendum. Ut non mauris eu neque. <a href="#">Read more...</a></li><li style="margin-top: 0px;">In pharetra suscipit orci sed viverra. Praesent at sollicitudin tortor, id. <a href="#">Read more...</a> </li><li style="margin-top: 0px;">Maecenas nec ligula sed est suscipit aliquet sed eget ipsum, suspendisse. <a href="#">Read more...</a></li><li style="margin-top: 0px;">Onec bibendum consectetur diam, nec euismod urna venenatis eget.. <a href="#">Read more...</a> </li></ul>
+		<ul class="newsticker" id="newsticker" > 
+		<li ng-repeat="element in news.elements">
+				<div id="news-header">{{element.name}} - {{element.date}}</div>
+				<p id="news-description">{{element.description}}</p>
+		</li>
+		</ul>
 		<img ng-src="images/arrow-down.png" id="downarrow">
 		</div>
 		</div>
